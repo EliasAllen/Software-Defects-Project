@@ -1,4 +1,4 @@
-# Software Defects Prediction Challenge
+# Software Defects Prediction 
 
 This repository holds an attempt to predict software defects using a binary classification dataset derived from the Software Defect Dataset. The work was completed as part of a Kaggle-style competition.
 
