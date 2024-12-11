@@ -84,7 +84,7 @@ Key Results:
 | Precision (True) | 64%          |
 | Recall (True)   | 34%           |
 
-![ROC Curve](path/to/roc_curve_image.png) *(Replace with actual path)*
+![ROC Curve](roc.png) 
 
 ---
 
