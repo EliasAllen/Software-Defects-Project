@@ -36,7 +36,7 @@ Key Results:
 **Data Visualization**:
 - Histogram plots and boxplots were used to analyze feature distributions.
 - Key correlated features with the target include `loc`, `branchCount`, and `v(g)`.
-
+![Correlation of Features](correlation.png)
 ---
 
 ### Problem Formulation
