@@ -114,6 +114,12 @@ Key Results:
 - Scikit-learn
 - Seaborn
 
-Install packages using:
-```bash
-pip install -r requirements.txt
+1. Download the dataset from [Kaggle](https://www.kaggle.com/competitions/playground-series-s3e23/data)
+2. Open up a JupyterLab environment in Python3 and install all the necessary packages
+3. Upload test.csv and train.csv in the runtime environment.
+4. Load the dataframes as train_data and test_data.
+5. All code is commented on how it works, so use the completed cells in SoftwareDefectsProject.ipynb to reproduce results.
+
+### Citations
+- [Software Defects Dataset](https://www.kaggle.com/competitions/playground-series-s3e23/data)
+- [Scikit-learn Documentation](https://scikit-learn.org)
