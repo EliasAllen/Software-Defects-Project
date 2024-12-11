@@ -6,11 +6,11 @@ This repository holds an attempt to predict software defects using a binary clas
 
 ## Overview
 
-The task is to predict the probability of software defects (`True`) based on a dataset of software metrics. The dataset consists of features like code complexity, branch counts, and other measurable properties of the code. Our approach formulates this problem as a binary classification task using a Random Forest model.
+The goal of this dataset project is to predict defects in C programs given various attributes about the code. The dataset consists of features like code complexity, branch counts, lines of code, and other properties of the code. This is a binary classification task, so the approach to handling this problem was using a Random Forest model.
 
 Key Results:
-- **Accuracy**: 80.68%
-- **ROC-AUC**: 77.15%
+- **Accuracy**: 81%
+- **ROC-AUC**: 77%
 - The model effectively distinguishes between defective and non-defective code, though improvements are possible for the minority class.
 
 ---
@@ -20,8 +20,8 @@ Key Results:
 ### Data
 
 **Dataset Description**:
-- **Source**: The dataset is a modified version of the Software Defect Dataset.
-- **Input**: Numerical and integer features describing software metrics.
+- **Source**: The dataset was generated from a deep learning model trained on the Software Defect Dataset.
+- **Input**: Numerical and integer features describing software features.
 - **Target**: Binary flag indicating the presence of defects (`True` or `False`).
 
 **Instances**:
@@ -41,12 +41,12 @@ Key Results:
 
 ### Problem Formulation
 
-**Input**: A set of numerical features describing software metrics.
+**Input**: A set of numerical features describing software features.
 
 **Output**: Probability of software defects (`True`).
 
 **Model**:
-- **Random Forest Classifier**: Selected for its robustness and ability to handle imbalanced datasets.
+- **Random Forest Classifier**: Selected for its ability to handle imbalanced datasets.
 
 **Hyperparameters**:
 - `n_estimators`: 100
@@ -58,20 +58,20 @@ Key Results:
 
 **Training Setup**:
 - **Environment**: JupyterLab
-- **Hardware**: Standard laptop with limited computational resources.
+- **Hardware**: Standard laptop with mediocre computational power.
 - **Software**: Python, Scikit-learn, Matplotlib, Pandas.
 
 **Training Details**:
 - Training split into 70% train, 15% validation, and 15% test.
-- Model performance tracked via accuracy and ROC-AUC metrics.
+- Model performance tracked using accuracy and ROC-AUC.
 
 **Challenges**:
 - Addressing class imbalance in the target variable.
 - Managing outliers effectively.
 
 **Results**:
-- **Accuracy**: 80.68%
-- **ROC-AUC**: 77.15%
+- **Accuracy**: 81%
+- **ROC-AUC**: 77%
 
 ---
 
@@ -79,8 +79,8 @@ Key Results:
 
 | Metric        | Validation Set |
 |---------------|----------------|
-| Accuracy      | 80.68%         |
-| ROC-AUC       | 77.15%         |
+| Accuracy      | 81%         |
+| ROC-AUC       | 77%         |
 | Precision (True) | 64%          |
 | Recall (True)   | 34%           |
 
@@ -91,8 +91,8 @@ Key Results:
 ### Conclusions
 
 - Features like `loc` and `branchCount` are key predictors of software defects.
-- Class imbalance affects recall for the minority class, and further techniques like SMOTE could improve performance.
-- Random Forest is an effective baseline model for this task.
+- Class imbalance affects recall for the minority class; perhaps techniques like Synthetic Minority Oversampling Technique (SMOTE) could help address this.
+- Random Forest serves as an effective baseline model for handling this task.
 
 ---
 
@@ -100,7 +100,6 @@ Key Results:
 
 - Implement techniques to address class imbalance, such as oversampling or SMOTE.
 - Experiment with additional models like Gradient Boosting or Neural Networks.
-- Evaluate the impact of feature engineering or domain-specific transformations.
 
 ---
 
