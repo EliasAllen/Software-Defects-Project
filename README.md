@@ -6,7 +6,7 @@ This repository holds an attempt to predict software defects using a binary clas
 
 ## Overview
 
-The goal of this dataset project is to predict defects in C programs given various attributes about the code. The dataset consists of features like code complexity, branch counts, lines of code, and other properties of the code. This is a binary classification task, so the approach to handling this problem was using a Random Forest model.
+The goal of this dataset project is to predict defects in software given various attributes about the code. The dataset consists of features like code complexity, branch counts, lines of code, and other properties of the code. This is a binary classification task, so the approach to handling this problem was using a Random Forest model.
 
 Key Results:
 - **Accuracy**: 81%
